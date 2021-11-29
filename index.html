@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#0037b2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR POS</title>
+
+	<link rel="stylesheet" href="./fonts/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">	
+</head>
+<body>
+	<section id="uno">
+		<div id="bm"></div>
+		<h1>Bienvenido a la página de instalación de tu dispositivo <strong>Yopit Pago.</strong></h1>
+		<p>Seguí estos simples pasos y empezá utilizar Yopit Pago, la billetera desarrollada especialmente para tu comercio.</p>				
+		<p><a href="#dos" class="cta toplink">Comencemos</a></p>
+	</section>
+	<section id="dos">
+		<div id="bm2"></div>
+		<h2>1. Descargar el Manual de usuario e instalación</h2>
+		<a href="./WPQ_QSG_Eng.pdf" class="cta" download id="down">Descargar Manual</a>
+		<p id="welldone" style="display: none;">Manual descargado!</p>
+		<a href="#tres" class="cta toplink" id="gotres" style="background-color: rgb(0,55,178);">Registrar dispositivo</a>
+
+	</section>
+	<section id="tres">
+		
+		<h2>2. Registrá tu dispositivo / número de serie</h2>
+		<form action="" method="POST">
+<input type="text" name="Número de serie:" placeholder="Número de serie:">
+<input type="text" name="Razón Social:" placeholder="Razón Social:">
+<input type="text" name="Dirección:" placeholder="Dirección:">
+<input type="text" name="Localidad:" placeholder="Localidad:">
+<input type="text" name="Provincia:" placeholder="Provincia:">
+<input type="text" name="Nombre y Apellido Contacto:" placeholder="Nombre y Apellido Contacto:">
+<input type="text" name="Celular Contacto:" placeholder="Celular Contacto:">
+<input type="email" name="Mail Contacto" placeholder="Mail Contacto">
+	<input type="submit" class="cta">
+		</form>
+	</section>
+		
+	<div id="loading" class="cargando">
+		Cargando...
+	</div>
+		
+		<script src="./lottie.js"></script>
+		<script src="./index.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="./js/main.js"></script>
+
+		<script>
+			addEventListener('click',(e)=>{				
+				if(e.target.id == 'down'){
+					// console.log('hola miguel!')
+					document.getElementById('down').style.display = 'none';
+					document.getElementById('gotres').style.display = 'inline-block';
+					document.getElementById('welldone').style.display = 'block';
+
+				}
+			})
+		</script>
+</body>
+</html>

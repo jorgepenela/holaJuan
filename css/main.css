@@ -1,0 +1,126 @@
+*{
+    color: #fff;
+    font-family: 'bentonsans_bookregular';
+    box-sizing: border-box;
+}
+
+strong{
+    font-family: 'bentonsans_boldregular';
+}
+body{
+    
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    height: 100vh;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#bm{			
+    width: 200px;	
+    margin: 0 auto;	
+}
+
+.cta {
+    font-family: "Lato",sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: #00d382;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff!important;
+    transition: all .5s;
+    text-transform: uppercase;
+}
+
+#uno{
+    background-color: rgb(0,55,178);
+}
+#uno h1{    
+    font-family: 'bentonsans_lightregular';
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+#uno p{
+    font-size: 11px;    
+    line-height: 1.5em;
+}
+#dos{
+    background: #f2f5fb;
+    
+}
+#dos *{
+    color: rgb(0,55,178);
+}
+#dos svg{
+    width: 90%;
+}
+#gotres{
+    display: none;
+}
+#tres{    
+    background-image: url(../img/home.svg);
+    background-position: right center;
+    background-size: cover;    
+    margin-bottom: 0px;
+}
+input{
+    display: block;    
+    background: #fff;
+    color: rgb(0,55,178);
+    margin: 10px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+#loading{
+    opacity: 1;
+    transition: 1s all;
+    background: #00d382;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+#loading.cargando{
+    opacity: 0;
+}
+
+/* TABLET */ 
+@media screen and (min-width: 700px){
+    #uno{
+        padding-top: 25vh;
+    }
+    #uno #bm{
+        width: 300px !important;
+        margin: 0 auto;        
+    }
+    #dos{
+        padding-top: 25vh;
+    }
+    #dos #bm2{
+        width: 300px;        
+        margin: 0 auto;
+    }
+    #tres{
+        padding-top: 20vh;
+    }
+    #tres form{
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+/* DESKTOP */
+@media screen and (min-width: 1100px){
+        
+}
